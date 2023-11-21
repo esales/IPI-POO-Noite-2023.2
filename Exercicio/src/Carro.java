@@ -1,4 +1,5 @@
 public class Carro {
+	
 	private String marca;
 	private String modelo;
 	private int ano;
@@ -18,18 +19,48 @@ public class Carro {
 	}
 	
 	public String getMarca() {
-		return this.marca;
+		return marca;
 	}
-	
+
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	
-	
-	public String toString() {
-		return this.marca + " - " + this.modelo + " - " + this.cor;
+
+	public String getModelo() {
+		return modelo;
 	}
-	
-	
-	
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public int getAno() {
+		return ano;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	@Override
+	public String toString() {
+		return "Carro [marca=" + marca + ", modelo=" + modelo + ", ano=" + ano + ", cor=" + cor + ", preco=" + preco
+				+ "]";
+	}
 }
