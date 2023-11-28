@@ -5,19 +5,33 @@ public class Carro {
 	private int ano;
 	private String cor;
 	private double preco;
+	private Motor motor;
 	
-	public Carro(String marca,
-				String modelo,
-				int ano,
-				String cor,
-				double preco) {
+	public Carro() {
+		super();
+	}
+	
+	public Carro(String marca) {
+		super();
+		this.marca = marca;
+	}
+	
+	public Carro(String marca, String modelo) {
+		super();
+		this.marca = marca;
+		this.modelo = modelo;
+	}
+
+	public Carro(String marca, String modelo, int ano, String cor, double preco, Motor motor) {
+		super();
 		this.marca = marca;
 		this.modelo = modelo;
 		this.ano = ano;
 		this.cor = cor;
 		this.preco = preco;
+		this.motor = motor;
 	}
-	
+
 	public String getMarca() {
 		return marca;
 	}
@@ -57,10 +71,20 @@ public class Carro {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
+	
+	public Motor getMotor() {
+		return motor;
+	}
+
+	public void setMotor(Motor motor) {
+		this.motor = motor;
+	}
 
 	@Override
 	public String toString() {
 		return "Carro [marca=" + marca + ", modelo=" + modelo + ", ano=" + ano + ", cor=" + cor + ", preco=" + preco
-				+ "]";
+				+ ", motor=" + motor + "]";
 	}
+
+	
 }
